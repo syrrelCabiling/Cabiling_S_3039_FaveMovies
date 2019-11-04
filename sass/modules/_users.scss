@@ -1,15 +1,15 @@
-.team { 
+.movieCont { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
     .user-panel {
-        flex: 0 1 200px;
+        flex: 0 1 100px;
         text-align: center;
         padding: 8px;
 
-        .u-avatar { max-width: 200px; }
+        .poster { max-width: 100px; }
 
         .u-link { 
             display: block; 

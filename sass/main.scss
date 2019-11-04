@@ -1,19 +1,19 @@
 @import '_vars';
-@import 'modules/_navbar';
 @import 'modules/_users';
 @import 'modules/_lightbox';
 
 body {
     color: $main-color;
     background-color: $body-bg;
+    margin: 0 auto;
 }
 
-h1, h2, h3 { color: $heading-color }
+h1, h2, h3 { color: $heading-color;}
 
 .panel { min-height: 80vh; }
 
 .panel:nth-child(odd) {
-    background-color: salmon;
+    background-color: #000000;
     color: white;
 }
 
