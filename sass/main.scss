@@ -8,7 +8,9 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3 { color: $heading-color;}
+h1, h2, h3 { 
+    color: red;
+}
 
 .panel { min-height: 80vh; }
 
@@ -17,6 +19,10 @@ h1, h2, h3 { color: $heading-color;}
     color: white;
 }
 
-#to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
+#to-top { 
+    position: fixed;
+     bottom: 10px; 
+     right: 10px; 
+     display: none; }
 
 @import 'modules/_footer'

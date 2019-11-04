@@ -9,28 +9,34 @@
         text-align: center;
         padding: 8px;
 
-        .poster { max-width: 100px; }
+        .poster { 
+            max-width: 100px; 
+        }
 
         .u-link { 
             display: block; 
-            //width: 150px;  
+            width: 150px;  
             text-decoration: none;
             margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 5px;
         }
 
-        h1, h3 { margin: 5px 0; }
+        h1, h3 { 
+            margin: 5px 0; 
+            margin-bottom: 20px;
+        }
     }
 }
 
 @media screen and (min-width: 900px) {
-    .team {
+    .movieCont {
         .user-panel { 
             flex: 1 1;
 
-            .u-avatar { max-width: 300px; }
+            .poster { max-width: 300px; }
         }
     }
+
 }
 

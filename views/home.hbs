@@ -5,13 +5,10 @@
         Click to know more! 
     </h1>--}}
 
-    <p>
-        These movies are good.
-    </p>
 
     <h4>Click on a movie below to learn more about it. Maybe you'll like them too!</h4>
 
-    <div class="movieCont">
+    <div class="movieCont col-lg-12 col-sm-12">
         <!-- loop through the movies list and put the info on the page -->
        
         <!-- this is exactly like a forEach loop with plain JS -->
@@ -31,14 +28,16 @@
     </div>
 
     <!-- this will be filled in on the client side when we render our AJAX data -->
-    <section class="lightbox">
-        <span class="close">x</span>
+    <section class="lightbox col-sm-12 col-lg-12">
+        <div class="row">
+        <span class="close">Exit</span>
         <div class="sidebar">
             <img src="" alt="Poster">
         </div>
 
         <div class="lb-content">
 
+        </div>
         </div>
     </section>
 </section>

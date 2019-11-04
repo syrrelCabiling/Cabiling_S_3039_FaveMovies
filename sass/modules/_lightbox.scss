@@ -27,18 +27,28 @@
         cursor: pointer;
         font-size: 2em;
         position: fixed;
-        border: thin solid white;
+        
         padding: 2px 14px 5px;
-        border-radius: 50%;
-        background-color: rgba(255,255,255,0.25);
+        
     }
 }
 
 .show-lb { display: flex !important; }
 
-.u-social {
-    li { 
-        display: inline-block;
-        padding: 10px;
+@media (min-width: 576px) { 
+    .lightbox {
+        min-height: 100vh;
+        width: 100%;
     }
-}
+    .sidebar {
+        flex: 1;
+    }
+    .close {
+        width: 15px;
+        font-size:  16px;
+    }
+    .lb-content {
+        flex: 2;
+        float: left;
+    }
+ }
