@@ -117,14 +117,14 @@ h2, h4, h5 {
 
 
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
     .lightbox .lb-content{
         color: white;
         text-align: left;
     }
     .lightbox {
         min-height: 100vh;
-        max-width: 100%;
+        width: 100%;
         overflow-y: scroll;
         
     }
@@ -132,7 +132,7 @@ h2, h4, h5 {
         text-align: left;
     }
     .lightbox img{
-        max-width:95%;
+        max-width:375px;
     }
     .lightbox iframe {
         width: 330px;

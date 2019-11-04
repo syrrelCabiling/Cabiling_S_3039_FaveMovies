@@ -43,6 +43,9 @@
         overflow-y: scroll;
         text-align: left;
     }
+    .lightbox img{
+        width:375px;
+    }
     .lightbox h5 {
         color:  #60a3bc;
     }
@@ -59,3 +62,22 @@
         text-align: left;
     }
  }
+
+ @media (min-width: 375px) {
+     .container {
+         width: 375px;
+     }
+     .lightbox {
+        min-height: 100%;
+        max-width: 100%;
+        overflow-y: scroll;
+        text-align: left;
+    }
+    .lightbox img{
+        width:475px;
+    }
+    .lightbox iframe {
+        width: 330px;
+        height: 250px
+    }
+}
