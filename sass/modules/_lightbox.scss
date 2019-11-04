@@ -36,37 +36,9 @@
     display: flex !important; 
 }
 
-@media (min-width: 575px) { 
-    .lightbox {
-        min-height: 100%;
-        width: 100%;
-        overflow-y: scroll;
-        text-align: left;
-    }
-    .lightbox img{
-        width:375px;
-    }
-    .lightbox h5 {
-        color:  #60a3bc;
-    }
-    .sidebar {
-        flex: 1;
-    }
-    .close {
-      
-        font-size:  16px;
-        z-index: 5100;
-    }
-    .lb-content {
-        float: left;
-        text-align: left;
-    }
- }
+
 
  @media (min-width: 375px) {
-     .container {
-         width: 375px;
-     }
      .lightbox {
         min-height: 100%;
         max-width: 100%;
@@ -74,7 +46,7 @@
         text-align: left;
     }
     .lightbox img{
-        width:475px;
+        width:375px;
     }
     .lightbox iframe {
         width: 330px;
