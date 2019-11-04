@@ -1,15 +1,13 @@
 .lightbox { 
     display: none;
     //display: flex;
-    flex-direction: row;
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 5000;
-    padding: 20px;
-
     background-color: rgba(0, 0,0, 0.85);
+    overflow: visible;
 
     .sidebar {
         flex: 1;
@@ -19,36 +17,45 @@
         flex: 3;
     }
 
-    img { max-width: 250px; }
+    img { 
+        max-width: 250px; 
+    }
 
     .close {    
         right: 24px;
         top: 10px;
         cursor: pointer;
-        font-size: 2em;
+        font-size: 16px;
         position: fixed;
-        
         padding: 2px 14px 5px;
         
     }
 }
 
-.show-lb { display: flex !important; }
+.show-lb { 
+    display: flex !important; 
+}
 
-@media (min-width: 576px) { 
+@media (min-width: 575px) { 
     .lightbox {
-        min-height: 100vh;
+        min-height: 100%;
         width: 100%;
+        overflow-y: scroll;
+        text-align: left;
+    }
+    .lightbox h5 {
+        color:  #60a3bc;
     }
     .sidebar {
         flex: 1;
     }
     .close {
-        width: 15px;
+      
         font-size:  16px;
+        z-index: 5100;
     }
     .lb-content {
-        flex: 2;
         float: left;
+        text-align: left;
     }
  }

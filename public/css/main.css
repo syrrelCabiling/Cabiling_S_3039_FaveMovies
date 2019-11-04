@@ -2,11 +2,20 @@
     background-color: #464646;
     text-align: center;
 }
+h1 {
+    font-family: 'Monoton', cursive;
+    margin-top: 20px;
+}
+h2, h4, h5 {
+    font-family:'Josefin Sans', sans-serif;
+    margin-top: 20px;
+}
 .movieCont{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
+    padding: 10px;
 }
 .movieCont .user-panel{
     flex:0 1 200px;
@@ -26,6 +35,11 @@
 .movieCont .user-panel h1,.movieCont .user-panel h3{
     margin:5px 0
 }
+.movieCont .user-panel .u-link:hover {
+    background-color:rgba(49, 96, 197, 0.8);
+    color: white;
+    transition: all 0.4s ease 0s;
+}
 
 @media screen and (min-width: 900px){
     .movieCont .user-panel{
@@ -37,33 +51,43 @@
     .lightbox{
         display:none;
         flex-direction:row;
-        min-height:100vh;
+        min-height:100%;
         width:100%;
-        position:fixed;
+        position: absolute;
         top:0;
         z-index:5000;
-        padding:20px;
+        padding:10px;
         background-color:rgba(0,0,0,0.85)
     }
     .lightbox .sidebar{
-        flex:1
+        float: left;
     }
     .lightbox .lb-content{
-        flex:3
+        flex:1;
+        text-align: left;
+    }
+    .lb-content h4{
+        color: #60a3bc;
     }
     .lightbox img{
         max-width:250px
     }
     .lightbox .close{
         right:24px;
-        top:10px;
+        top: 25px;
+        z-index: 5100;
         cursor:pointer;
-        font-size:2em;
+        font-size:12px;
         position:fixed;
-        border:thin solid white;
-        padding:2px 14px 5px;
-        border-radius:50%;
-        background-color:rgba(255,255,255,0.25)
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #60a3bc;
+        padding: 10px;
+        border-radius: 50px;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
     }
     .show-lb{
         display:flex !important
@@ -71,10 +95,11 @@
 
     body{
         color:#fff;
-        background-color:#000
+        background-color:#60a3bc;
     }
     h1,h2,h3{
-        color:#ff0
+        color:white;
+        text-align: center;
     }
     .panel{
         min-height:80vh
@@ -89,18 +114,29 @@
         right:10px;
         display:none
     }
-    footer{
-        color:orange
-    }
 
 
-@media screen and (max-width: 575px) {
+
+@media screen and (max-width: 375px) {
     .lightbox .lb-content{
-        color: red;
+        color: white;
+        text-align: left;
     }
     .lightbox {
-        
+        min-height: 100vh;
+        max-width: 100%;
         overflow-y: scroll;
+        
+    }
+    .lightbox h2 {
+        text-align: left;
+    }
+    .lightbox img{
+        max-width:95%;
+    }
+    .lightbox iframe {
+        width: 330px;
+        height: 250px
     }
 
 }

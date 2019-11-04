@@ -5,11 +5,11 @@ const myVM = (() => {
     let movieButtons = document.querySelectorAll('.u-link'),
         lightbox = document.querySelector('.lightbox');
 
-       // function renderSocialMedia(socialMedia) {
-       //     return `<ul class="u-social">
-        //                ${socialMedia.map(item => `<li>${item}</li>`).join('')}
-        //            </ul>`
-      //  }
+        function renderCastsList(casts) {
+            return `<ul class="casts">
+                       ${casts.map(item => `<li>${item}</li>`).join('')}
+                   </ul>`
+      }
 
         function movieInfo(movies) { // person is the databaase result
             let targetDiv = document.querySelector('.lb-content'),
@@ -17,9 +17,10 @@ const myVM = (() => {
 
                 let movieCont = `
                     <h2>${movies.Title}</h2>
-                    <p>${movies.Synopsis}</p>
-                    <p>${movies.Casts}</p>
-                    <p>${movies.Rating}</p>
+                   <h5>Synopsis</h5> <p>${movies.Synopsis}</p>
+                   <p>${movies.Specs}</p>
+                   <h5>Casts</h5> <p>${movies.Casts}</p>
+                   <h5>Rotten Tomato Rating</h5> <p>${movies.Rating}</p>
                     <p>${movies.Trailer}</p>
                 `;
 
