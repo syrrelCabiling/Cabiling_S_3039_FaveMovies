@@ -2,14 +2,11 @@
 @import 'modules/_users';
 @import 'modules/_lightbox';
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap');
+@import 'modules/_errors';
 html {
     height: 100vh;
     width: 100vw;
-}
-body {
-    color: $main-color;
-    background-color: $body-bg;
-    margin: 0 auto;
+  
 }
 
 h1, h2, h3, h4, h5 { 

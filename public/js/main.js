@@ -38,7 +38,7 @@ const myVM = (() => {
             event.preventDefault(); //kill default tag in behaviour (dont navigate anywhere)
            // debugger;
             let imgSrc = this.previousElementSibling.getAttribute('src');
-            let url = `/${this.getAttribute('href')}`; // /1
+            let url = `/users/${this.getAttribute('href')}`; // /1
 
 
             fetch(url) // go get data
