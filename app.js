@@ -15,7 +15,7 @@ app.use('/', require('./routes/index'));
 app.use((req, res, next) => {
     var err = new Error('Not Found');
     err.status = 404;
-    err.customMessage = "Sorry! Something broke! Not your fault though!"
+    err.customMessage = "Someone's a  bit lost. Just follow the light!"
     next(err); // means fall thorugh to the next route
 })
 
